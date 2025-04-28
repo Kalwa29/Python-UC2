@@ -13,19 +13,24 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
 
     <!-- Estilos personalizados (opcional) -->
+    <title>Footer com Direitos Reservados</title>
+
     <style>
         body {
             padding: 20px;
-            background-color:rgb(24, 24, 24);
+            background-color:rgb(25, 25, 25);
         }
         header {
             margin-bottom: 20px;
             background-color: #2b2b2b;
+            font-size:larger;
         }
         footer {
-            margin-top: 40px;
-            padding-top: 20px;
+            color:#ffffff;
+            margin-top: 10px;
+            padding-top: 15px;
             background-color: #808080;
+            font-size:large ;
         }
         .icon {
             margin-right: 5px;
@@ -41,12 +46,13 @@
 
 th, td {
   border: 1px solid #000000;
-  padding: 10px;
+  padding-right: 10px;
+  padding-left: 20px;
   text-align:left;
 }
 
 th {
-  background-color: #eeeeee;
+  background-color: #9b9b9b9c;
 }
 
 tr:nth-child(even) {
@@ -54,12 +60,44 @@ tr:nth-child(even) {
 }
 
 tr:hover {
-  background-color: #a5a5a5;
+  background-color: #666666;
 }
+
+img {
+  object-fit: cover; 
+  object-position: 50% 25%; 
+  width: 250px;
+  height: 250px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.jogos{
+      font-size: 20px;
+    }
+
+.valor{
+    font-size: 20px;
+}
+
+.produtos {
+      transition: transform 0.3s; /* Só anima o zoom */
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #000000;
+    }
+
+    .produtos:hover {
+      transform: scale(1.01); /* Dá o zoom */
+    }
     </style>
+    
+    <link rel="preload" href="imagem-importante.jpg" as="image">
 </head>
 <body>
-
     <!-- Cabeçalho -->
         <header class="container">    
                 <div class="d-flex justify-content-between align-items-center">
@@ -114,154 +152,172 @@ tr:hover {
                 <!-- Corpo da tabela --> 
                 <tbody>
                   <!-- Linha -->     
-                  <tr>        
+                  <tr class="produtos">        
                     <td>
-                        <img src="https://placehold.co/150x150?text=Mizuno"
-                            alt="Mizuno"></td>
+                        <img src= "c:\Users\ionel\Downloads\emfnr3lo.png"
+                            alt="The Last of Us Part II"></td>
     
-                        <td>
-                            <p>Nike Air Force 1 '07</p>
-                            <p>cor: Branco</p>
-                            <p>Material: Couro sintético</p>
-                            <p>Dispnivel</p>
+                        <td class="jogos">
+                            <p>The Last of Us Part II</p>
+                            <p>PlayStation 4</p>
+                            <p>Naughty Dog</p>
+                            <p>2020</p>
+                            <p>18+</p>
+                            <p>Disponivel</p>
                     </td>
-                    <td>R$ 399,90</td>
+                    <td class="valor">R$ 225,00</td>
                   </tr>
     
                   
                   <tr>        
                     <td>
-                        <img src="https://placehold.co/150x150?text=Mizuno"
-                            alt="Mizuno"></td>
-    
-                        <td>
-                            <p>Mizuno Wave Prophecy 12</p>
-                            <p>cor: Preto e dourado </p>
-                            <p>Material: Mesh tecnológico e TPU</p>
-                            <p>Dispnivel</p>
+                        <img src=c:\Users\ionel\Downloads\ncm7l5ry.png alt="The Legend of Zelda: Breath of the Wild">
                     </td>
-                    <td>R$ 299,90</td>
+                        <td class="jogos">
+                            <p>The Legend of Zelda: Breath of the Wild</p>
+                            <p>Nintendo Switch, Wii U </p>
+                            <p>Nintendo EPD</p>
+                            <p>2017</p>
+                            <p>10+</p>
+                            <p>Disponivel</p>
+                    </td>
+                    <td class="valor">R$ 299,00</td>
                   </tr>
     
                 
                   
                   <tr>        
                     <td>
-                        <img src="https://placehold.co/150x150?text=Mizuno"
-                            alt="Mizuno"></td>
+                        <img src=c:\Users\ionel\Downloads\gt1kb444.png
+                            alt="Elden Ring"></td>
     
-                        <td>
-                            <p>Fila Disruptor II</p>
-                            <p>cor: Branco gelo </p>
-                            <p>Material:  Couro sintético</p>
-                            <p>Dispnivel</p>
+                        <td class="jogos">
+                            <p>Elden Ring</p>
+                            <p>PlayStation, Xbox, PC</p>
+                            <p>FromSoftware</p>
+                            <p>2022</p>
+                            <p>16+</p>
+                            <p>Disponivel</p>
                     </td>
-                    <td>R$ 150,00</td>
+                    <td class="valor">R$ 250,00</td>
                   </tr>
     
     
                   <tr>        
                     <td>
-                        <img src="https://placehold.co/150x150?text=Mizuno"
-                            alt="Mizuno"></td>
+                        <img src="c:\Users\ionel\Downloads\32i7yv9c.png"
+                            alt="God of War (2018)"></td>
     
-                        <td>
-                            <p>Reebok Club C 85</p>
-                            <p>cor: Reebok Club C 85 </p>
-                            <p>Material:  Couro legítimo</p>
-                            <p>Dispnivel</p>
+                        <td class="jogos">
+                            <p>God of War (2018)</p>
+                            <p>PlayStation 4 </p>
+                            <p>Santa Monica Studio</p>
+                            <p>2018</p>
+                            <p>18+</p>
+                            <p>Ultimas Unidades</p>
                     </td>
-                    <td>R$ 549,99</td>
+                    <td class="valor">R$ 80,00</td>
                   </tr>
     
                   <tr>        
                     <td>
-                        <img src="https://placehold.co/150x150?text=Mizuno"
-                            alt="Mizuno"></td>
+                        <img src="https://a-static.mlcdn.com.br/800x560/jogo-minecraft-starter-collection-ps-4-mojang/dg-mix-games/fedb88d6beb611efa3594201ac18503c/4ae8686c526e637ff3275e8448ca7ce9.jpeg"
+                            alt="Minecraft"></td>
     
-                        <td>
-                            <p>Asics Gel-Kayano 30</p>
-                            <p>cor: Azul escuro com detalhes laranja </p>
-                            <p>Material:  Malha técnica respirável</p>
-                            <p>Poucas Únidades</p>
+                        <td clas="jogos">
+                            <p>Minecraft</p>
+                            <p>PC, PlayStation, Xbox, Switch, Mobile</p>
+                            <p>Mojang Studios</p>
+                            <p>2011</p>
+                            <p>Livre</p>
+                            <p>Poucas Unidades</p>
                     </td>
-                    <td>R$ 399,99</td>
+                    <td class="valor">R$ 100,00</td>
                   </tr>
     
                   <tr>        
                     <td>
-                        <img src="https://placehold.co/150x150?text=Mizuno"
-                            alt="Mizuno"></td>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_731180-MLA82623605951_022025-O.webp"
+                            alt="Red Dead Redemption 2"></td>
     
-                        <td>
-                            <p>Vans Old Skool</p>
-                            <p>cor: preto e Branco </p>
-                            <p>Material: Lona e camurça</p>
-                            <p>Últimas Unidades</p>
+                        <td class="jogos">
+                            <p>Red Dead Redemption 2</p>
+                            <p>PlayStation 4, Xbox One, PC</p>
+                            <p>Rockstar Games</p>
+                            <p>2018</p>
+                            <p>18+</p>
+                            <p>Poucas Unidades</p>
                     </td>
-                    <td>R$ 150,00</td>
+                    <td class="valor">R$ 200,00</td>
                   </tr>
     
     
                   <tr>        
                     <td>
-                        <img src="https://placehold.co/150x150?text=Mizuno"
-                            alt="Mizuno"></td>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_867031-MLA40865317687_022020-O.webp"
+                            alt="Super Mario Odyssey"></td>
     
-                        <td>
-                            <p>New Balance 574 Core</p>
-                            <p>cor: Cinza </p>
-                            <p>Material: Camurça e mesh</p>
+                        <td class="jogos">
+                            <p>Super Mario Odyssey</p>
+                            <p>Nintendo Switch</p>
+                            <p>Nintendo EPD</p>
+                            <p>2017</p>
+                            <p>Livre</p>
+                            <p>Poucas Unidades</p>
+                    </td>
+                    <td class="valor">R$ 299,00</td>
+                  </tr>
+    
+    
+                  <tr>        
+                    <td>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_999556-MLA54078260253_022023-O.webp"
+                            alt="Resident Evil 4 Remake"></td>
+    
+                        <td class="jogos">
+                            <p>Resident Evil 4 Remake</p>
+                            <p>PlayStation, Xbox, PC</p>
+                            <p>Capcom</p>
+                            <p>2023</p>
+                            <p>18+</p>
                             <p>Indisponivel</p>
                     </td>
-                    <td>R$ 999,99</td>
+                    <td class="valor">R$ 249,00</td>
+                  </tr>
+    
+                  <tr>        
+                    <td>
+                        <img src="https://th.bing.com/th/id/OIP.Yb7isThvH5JUfM0_qCix0wHaJC?rs=1&pid=ImgDetMain"
+                            alt="Fortnite"></td>
+    
+                        <td class="jogos">
+                            <p>Fortnite</p>
+                            <p>PC, PlayStation, Xbox, Switch, Mobile</p>
+                            <p>Epic Games</p>
+                            <p>2017</p>
+                            <p>18+</p>
+                            <p>Ultimas Unidades</p>
+                    </td>
+                    <td class="valor">R$ 45,00</td>
                   </tr>
     
     
                   <tr>        
                     <td>
-                        <img src="https://placehold.co/150x150?text=Mizuno"
-                            alt="Mizuno"></td>
+                        <img src="https://th.bing.com/th?id=OPHS.r%2bjqAAK9NjUuVA474C474&w=248&h=248&c=17&o=5&pid=21.1"
+                            alt="Hollow Knight"></td>
     
-                        <td>
-                            <p>Puma RS-X Efekt</p>
-                            <p>cor:Azul marinho e verde neon </p>
-                            <p>Material: Malha, camurça e couro sintético</p>
-                            <p>Indispnivel</p>
+                        <td clas="jogos">
+                            <p>Hollow Knight</p>
+                            <p>PC, PlayStation, Xbox, Switch </p>
+                            <p>Team Cherry</p>
+                            <p>2017 </p>
+                            <p>18+</p>
+                            <p>Ultimas Unidades</p>
                     </td>
-                    <td>R$ 299,99</td>
+                    <td class="valor">R$ 70,00</td>
                   </tr>
-    
-    
-    
-                  <tr>        
-                    <td>
-                        <img src="https://placehold.co/150x150?text=Mizuno"
-                            alt="Mizuno"></td>
-    
-                        <td>
-                            <p>Converse Chuck Taylor All Star</p>
-                            <p>cor: Branco clássico</p>
-                            <p>Material:  Lona de algodão</p>
-                            <p>Dispnivel</p>
-                    </td>
-                    <td>R$ 350,00</td>
-                  </tr>
-    
-    
-                  <tr>        
-                    <td>
-                        <img src="https://placehold.co/150x150?text=Mizuno"
-                            alt="Mizuno"></td>
-    
-                        <td>
-                            <p>Adidas Ultraboost 22</p>
-                            <p>cor:Preto com detalhes cinza </p>
-                            <p>Material: Tecido Primeknit reciclado</p>
-                            <p>Últimas Unidades </p>
-                    </td>
-                    <td>R$ 299,99</td>
-                  </tr>
+
     
     
     
@@ -275,14 +331,15 @@ tr:hover {
         <div class="container">
             <div class="row">
                 <div class="col-3 border"><p>Links rápidos</p>
-                    <p>
-                        Sobre nós
-                       <p>Faq</p>
-                       <p>Ajuda</p>
-                       <p>Meu Acesso</p>
-                       <p>Blog</p>
-                       <p>Contato</p>
-                    </p>
+                    <ul>
+                        <li>Sobre nós</li>
+                        <li>FAQ</li>
+                        <li>Ajuda</li>
+                        <li>Meu Acesso</li>
+                        <li>Blog</li>
+                        <li>Contato</li>
+                      </ul>
+                      
                     
 
 
