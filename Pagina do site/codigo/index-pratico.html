@@ -71,7 +71,7 @@ img {
 }
 
 img {
-    max-width: 100%;
+    max-width: 95%;
     height: auto;
 }
 
@@ -83,16 +83,13 @@ img {
     font-size: 20px;
 }
 
-.produtos {
-      transition: transform 0.3s; /* Só anima o zoom */
-      margin: 10px;
-      padding: 20px;
-      border: 1px solid #000000;
-    }
+.barra-de-pesquisa {
+    width: 500px;
+    height: 40px;
+    font-size: 25px;
+  }
 
-    .produtos:hover {
-      transform: scale(1.01); /* Dá o zoom */
-    }
+
     </style>
     
     <link rel="preload" href="imagem-importante.jpg" as="image">
@@ -106,18 +103,14 @@ img {
                         <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23"/>
                     </svg> Game$hop</h1>
                     <nav class="container">
-                        <div>
-                            <h1>
-                               <section id="section3" class="mb-5">
-                                    <article class="card mb-5">
-                                        <div class="card-text"><a href="#section1" class="nav-link"></a><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="dark" class="bi bi-search" viewBox="0 0 16 16">
-                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                                            </svg> Pesquisar</a></h1>
-                                        </div>
-                                    </article>
-                                </section>
-                            </h1>
-                        </div>
+                        <form action="pesquisa.php" method="get">
+                            <input type="text" name="query" class="barra-de-pesquisa" placeholder="Pesquisar..." required>
+                            <button class="btn btn-primary" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                              </svg></button>
+                            </div>
+                          </form>
+                          
                     </nav>
                     <nav>
                         <ul class="nav">
@@ -153,19 +146,51 @@ img {
                 <tbody>
                   <!-- Linha -->     
                   <tr class="produtos">        
+
+                    <td>
+                        <img src= "https://http2.mlstatic.com/D_NQ_NP_849004-MLU73290324045_122023-O.webp"
+                            alt="The Last of Us Part II"></td>
+    
+                        <td class="jogos">
+                            <p>Nome: Far Cry 6</p>
+                            <p>Plataformas:
+
+                                PlayStation 4
+
+                                PlayStation 5
+                                
+                                Xbox One
+                                
+                                Xbox Series X/S
+                                
+                                Microsoft Windows (PC)
+                                
+                                Amazon Luna
+                                
+                                Google Stadia</p>
+                            <p>Desenvolvedora: Ubisoft Toronto</p>
+                            <p>Ano de lançamento: 2021</p>
+                            <p>Faixa etária: 18+</p>
+                            <p>Disponivel</p>
+                    </td>
+                    <td class="valor">R$149,89</td>
+                  </tr>
+
+
+
                     <td>
                         <img src= "c:\Users\ionel\Downloads\emfnr3lo.png"
                             alt="The Last of Us Part II"></td>
     
                         <td class="jogos">
-                            <p>The Last of Us Part II</p>
-                            <p>PlayStation 4</p>
-                            <p>Naughty Dog</p>
-                            <p>2020</p>
-                            <p>18+</p>
+                            <p>Nome: The Last of Us Part II</p>
+                            <p>Plataformas: PlayStation 4</p>
+                            <p>Desenvolvedora: Naughty Dog</p>
+                            <p>Ano de lançamento: 2020</p>
+                            <p>Faixa etária: 18+</p>
                             <p>Disponivel</p>
                     </td>
-                    <td class="valor">R$ 225,00</td>
+                    <td class="valor">R$225,00</td>
                   </tr>
     
                   
@@ -174,14 +199,14 @@ img {
                         <img src=c:\Users\ionel\Downloads\ncm7l5ry.png alt="The Legend of Zelda: Breath of the Wild">
                     </td>
                         <td class="jogos">
-                            <p>The Legend of Zelda: Breath of the Wild</p>
-                            <p>Nintendo Switch, Wii U </p>
-                            <p>Nintendo EPD</p>
-                            <p>2017</p>
-                            <p>10+</p>
+                            <p>Nome: The Legend of Zelda: Breath of the Wild</p>
+                            <p>Plataformas: Nintendo Switch, Wii U </p>
+                            <p>Desenvolvedora: Nintendo EPD</p>
+                            <p>Ano de lançamento:2017</p>
+                            <p>Faixa etária: 10+</p>
                             <p>Disponivel</p>
                     </td>
-                    <td class="valor">R$ 299,00</td>
+                    <td class="valor">R$299,00</td>
                   </tr>
     
                 
@@ -192,14 +217,14 @@ img {
                             alt="Elden Ring"></td>
     
                         <td class="jogos">
-                            <p>Elden Ring</p>
-                            <p>PlayStation, Xbox, PC</p>
-                            <p>FromSoftware</p>
-                            <p>2022</p>
-                            <p>16+</p>
+                            <p>Nome: Elden Ring</p>
+                            <p>Plataformas: PlayStation, Xbox, PC</p>
+                            <p>Desenvolvedora: FromSoftware</p>
+                            <p>Ano de lançamento: 2022</p>
+                            <p>Faixa etária: 16+</p>
                             <p>Disponivel</p>
                     </td>
-                    <td class="valor">R$ 250,00</td>
+                    <td class="valor">R$250,00</td>
                   </tr>
     
     
@@ -209,14 +234,14 @@ img {
                             alt="God of War (2018)"></td>
     
                         <td class="jogos">
-                            <p>God of War (2018)</p>
-                            <p>PlayStation 4 </p>
-                            <p>Santa Monica Studio</p>
-                            <p>2018</p>
-                            <p>18+</p>
+                            <p>Nome: God of War (2018)</p>
+                            <p>Plataformas: PlayStation 4 </p>
+                            <p>Desenvolvedora: Santa Monica Studio</p>
+                            <p>Ano de lançamento: 2018</p>
+                            <p>Faixa etária: 18+</p>
                             <p>Ultimas Unidades</p>
                     </td>
-                    <td class="valor">R$ 80,00</td>
+                    <td class="valor">R$80,00</td>
                   </tr>
     
                   <tr>        
@@ -225,14 +250,14 @@ img {
                             alt="Minecraft"></td>
     
                         <td clas="jogos">
-                            <p>Minecraft</p>
-                            <p>PC, PlayStation, Xbox, Switch, Mobile</p>
-                            <p>Mojang Studios</p>
-                            <p>2011</p>
-                            <p>Livre</p>
+                            <p>Nome: Minecraft</p>
+                            <p>Plataformas: PC, PlayStation, Xbox, Switch, Mobile</p>
+                            <p>Desenvolvedora: Mojang Studios</p>
+                            <p>Ano de lançamento: 2011</p>
+                            <p>Faixa etária: Livre</p>
                             <p>Poucas Unidades</p>
                     </td>
-                    <td class="valor">R$ 100,00</td>
+                    <td class="valor">R$100,00</td>
                   </tr>
     
                   <tr>        
@@ -241,14 +266,14 @@ img {
                             alt="Red Dead Redemption 2"></td>
     
                         <td class="jogos">
-                            <p>Red Dead Redemption 2</p>
-                            <p>PlayStation 4, Xbox One, PC</p>
-                            <p>Rockstar Games</p>
-                            <p>2018</p>
-                            <p>18+</p>
+                            <p>Nome: Red Dead Redemption 2</p>
+                            <p>Plataformas: PlayStation 4, Xbox One, PC</p>
+                            <p>Desenvolvedora: Rockstar Games</p>
+                            <p>Ano de lançamento: 2018</p>
+                            <p>Faixa etária: 18+</p>
                             <p>Poucas Unidades</p>
                     </td>
-                    <td class="valor">R$ 200,00</td>
+                    <td class="valor">R$200,00</td>
                   </tr>
     
     
@@ -258,14 +283,14 @@ img {
                             alt="Super Mario Odyssey"></td>
     
                         <td class="jogos">
-                            <p>Super Mario Odyssey</p>
-                            <p>Nintendo Switch</p>
-                            <p>Nintendo EPD</p>
-                            <p>2017</p>
-                            <p>Livre</p>
+                            <p>Nome: Super Mario Odyssey</p>
+                            <p>Plataformas:Nintendo Switch</p> 
+                            <p>Desenvolvedora: Nintendo EPD</p>
+                            <p>Ano de lançamento: 2017</p>
+                            <p>Faixa etária: Livre</p>
                             <p>Poucas Unidades</p>
                     </td>
-                    <td class="valor">R$ 299,00</td>
+                    <td class="valor">R$299,00</td>
                   </tr>
     
     
@@ -275,14 +300,14 @@ img {
                             alt="Resident Evil 4 Remake"></td>
     
                         <td class="jogos">
-                            <p>Resident Evil 4 Remake</p>
-                            <p>PlayStation, Xbox, PC</p>
-                            <p>Capcom</p>
-                            <p>2023</p>
-                            <p>18+</p>
+                            <p>Nome: Resident Evil 4 Remake</p>
+                            <p>Plataformas: PlayStation, Xbox, PC</p>
+                            <p>Desenvolvedora: Capcom</p>
+                            <p>Ano de lançamento: 2023</p>
+                            <p>Faixa etária: 18+</p>
                             <p>Indisponivel</p>
                     </td>
-                    <td class="valor">R$ 249,00</td>
+                    <td class="valor">R$249,00</td>
                   </tr>
     
                   <tr>        
@@ -291,14 +316,14 @@ img {
                             alt="Fortnite"></td>
     
                         <td class="jogos">
-                            <p>Fortnite</p>
-                            <p>PC, PlayStation, Xbox, Switch, Mobile</p>
-                            <p>Epic Games</p>
-                            <p>2017</p>
-                            <p>18+</p>
+                            <p>Nome: Fortnite</p>
+                            <p>Plataformas: PC, PlayStation, Xbox, Switch, Mobile</p>
+                            <p>Desenvolvedora: Epic Games</p>
+                            <p>Ano de lançamento: 2017</p>
+                            <p>Faixa etária: 18+</p>
                             <p>Ultimas Unidades</p>
                     </td>
-                    <td class="valor">R$ 45,00</td>
+                    <td class="valor">R$45,00</td>
                   </tr>
     
     
@@ -308,14 +333,14 @@ img {
                             alt="Hollow Knight"></td>
     
                         <td clas="jogos">
-                            <p>Hollow Knight</p>
-                            <p>PC, PlayStation, Xbox, Switch </p>
-                            <p>Team Cherry</p>
-                            <p>2017 </p>
-                            <p>18+</p>
+                            <p>Nome: Hollow Knight</p>
+                            <p>Plataformas: PC, PlayStation, Xbox, Switch </p>
+                            <p>Desenvolvedora: Team Cherry</p>
+                            <p>Ano de lançamento: 2017 </p>
+                            <p>Faixa etária: 18+</p>
                             <p>Ultimas Unidades</p>
                     </td>
-                    <td class="valor">R$ 70,00</td>
+                    <td class="valor">R$70,00</td>
                   </tr>
 
     
